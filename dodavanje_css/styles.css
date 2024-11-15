@@ -1,0 +1,45 @@
+/* universal selektor */
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    color: lime;
+    background-color: aquamarine;
+}
+
+h4 {
+    color: #025ff5;
+}
+ p{
+    font-weight: 100;
+    font-size: 2rem;
+ }
+
+ div{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    text-align: center;
+ }
+
+/* klase */
+.naslov {
+    color: fuchsia;
+}
+
+/* id */
+#nasloviii {
+    color: brown;
+}
+
+.RGB {
+    color: rgb(10, 150, 61)
+}
+
+.amet {
+    background-color: burlywood;
+}
+
+
+
