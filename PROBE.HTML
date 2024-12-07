@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zastava Švicarske</title>
+ 
+  <STyle>
+    .swiss-flag {
+  width: 200px;
+  height: 200px;
+  background-color: #d52b1e; /* Crvena boja pozadine */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Horizontalni dio križa */
+.swiss-cross.horizontal {
+  width: 120px; /* Širina horizontalnog dijela križa */
+  height: 30px; /* Visina horizontalnog dijela križa */
+  background-color: white; /* Bijela boja */
+  position: absolute;
+}
+
+/* Vertikalni dio križa */
+.swiss-cross.vertical {
+  width: 30px; /* Širina vertikalnog dijela križa */
+  height: 120px; /* Visina vertikalnog dijela križa */
+  background-color: white; /* Bijela boja */
+  position: absolute;
+}
+  </STyle>
+</head>
+<body>
+
+  <div class="swiss-flag">
+    <div class="swiss-cross horizontal"></div>
+    <div class="swiss-cross vertical"></div>
+  </div>
+
+</body>
+</html>
