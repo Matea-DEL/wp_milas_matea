@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+section {
+    grid-column: span 4;
+    background-color: #fff8e1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+.recept img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #f8b400;
+            transition: opacity 0.3s;
+        }
+
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+#kontakt {
+    background-color: #fff8e1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+}
+/* Stilizacija za mobilne uređaje */
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        grid-column: span 12;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dobrodošli u svijet recepata</h1>
+        <p>Otkrijte ukusne recepte i inspiraciju za vaše kuhanje.</p>
+    </header>
+
+    <main>
+        <section id="predjela">
+            <h2>Predjela</h2>
+            <div class="recept">
+                <img src="https://www.b92.net/news/pics/2023/10/20/170613188465324f3d79a20968249926_w640.jpg" alt="Predjelo">
+                <h3>Bruschette</h3>
+                <p>Ukusne bruschette s rajčicama i bosiljkom.</p>
+                <h3>SASTOJCI</h3>
+               
+                <li>2 češnja češnjaka</li>
+                <li>6 rajčica</li>
+                <li>2 grane svježeg bosiljka</li>
+                <li>1 „Francuz“ ili sličan duguljasti kruh</li>
+                <li>sol</li>
+                <li>svježe mljeveni papar</li>
+            
+           
+            <h3>PRIPREMA</h3>
+            <p>Blanširajte rajčice, a zatim ih narežite na kockice. U zdjeli ih pomiješajte sa žlicom ulja, soli, paprom i 
+                narezanim listićima bosiljka. Kruh narežite na šnite debljine oko 1 centimetra. 
+                Kratko ih prepržite u pećnici na 200 stupnjeva oko 10 minuta ili u tosteru. 
+                Zatim ih natrljajte češnjakom i premažite maslinovim uljem. Na njih žličicom rasporedite smjesu od rajčica i pecite još oko 5 minuta u pećnici.</p>
+                
+            </div>
+        </section>
+
+        <section id="glavna-jela">
+            <h2>Glavna jela</h2>
+            <div class="recept">
+                <img src="https://recepti-api.index.hr/img/preview/large/recipe-mobile/05ff7f6c-e2da-40f1-87c6-e62b34ca1488/DSC09498.JPG" alt="Glavno jelo">
+                <h3>Piletina s povrćem</h3>
+                <p>Savršeno pečena piletina s povrćem.</p>
+                <h3>SASTOJCI</h3>
+               
+                    <li>piletina</li>
+                    <li>povrće</li>
+                    <li>začini</li>
+                    
+               
+                <h3>PRIPREMA</h3>
+                <p>
+                    U dobro zagrijanu tavu stavite 1 žlicu maslinova ulja i na njemu popržite posoljene pileće filete s obje strane do zlatno smeđe boje.
+                    
+                    
+                    Filete izvadite sa strane, a na istu tavicu dodajte ostatak ulja, sitno nasjeckani luk i na tanke trakice narezanu papriku. Pržite 2 minute da luk i paprika malo omekšaju, pa dodajte protisnuti češnjak i patlidžan narezan na kockice.
+                    
+                    
+                    Pržite još oko 1 minutu, dodajte sjeckanu rajčicu, papar, jednu žlicu Vegete i pirjajte oko 2 minute. Rajčicu prebacite u odgovarajuću vatrostalnu posudu (cca 20x20 cm).
+                    
+                    
+                    Na nju položite pileće filete i lagano ih utisnite u rajčicu. Pospite natrganom riccotom i pecite 15 minuta na 200 °C.</p>
+            </div>
+        </section>
+
+        <section id="deserti">
+            <h2>Deserti</h2>
+            <div class="recept">
+                <img src="https://piovariations.cdn.podravka.net/06a0c316-610e-11eb-a769-0242ac12001d/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.jpeg" alt="Desert">
+                <h3>Crnac bez jaja</h3>
+                <p>Klasični brzi desert bez jaja.</p>
+                <h3>SASTOJCI</h3>
+               
+                    <li>3 jogurta (3*180 g)</li>
+                    <li>300 g Pšeničnog glatkog brašna Podravka</li>
+                    <li>250 g šećera</li>
+                    <li>120 ml ulja</li>
+                    <li>25 g kakaa</li>
+                    <li>2 žličice Sode bikarbone Dolcela</li>
+               
+                <h3>PRIPREMA</h3>
+                <p>Jogurt, brašno, šećer, ulje, kakao i sodu bikarbonu miješajte električnom miješalicom 2-3 minute.
+
+                    
+                    Smjesu izlijte u lim veličine 20×30 cm prethodno premazan maslacem i pecite u pećnici zagrijanoj na 200°C oko 20 minuta.
+                    
+                
+                    Maslac zakipite, maknite s vatre, umiješajte čokoladu natrganu na kockice, šećer i mlijeko pa miješajte dok ne dobijete glatku smjesu.
+                    
+                
+                    Kolač ohladite i prelijte čokoladnom glazurom.</p>
+            </div>
+        </section>
+
+    </main>
+<section id="kontakt">
+    <h2>Želite li još recepata?</h2>
+    <p>Pošaljite nam vašu email adresu, OIB, ime i prezime, a mi ćemo vam poslati još ukusnih recepata!</p>
+    <form action="" method="post">
+        <label for="ime">Ime:</label><br>
+        <input type="text" id="ime" name="ime" required placeholder="Vaše ime"><br><br>
+
+        <label for="prezime">Prezime:</label><br>
+        <input type="text" id="prezime" name="prezime" required placeholder="Vaše prezime"><br><br>
+
+        <label for="oib">OIB:</label><br>
+        <input type="text" id="oib" name="oib" pattern="\d{11}" required placeholder="11 znamenki"><br><br>
+
+        <label for="email">Email adresa:</label><br>
+        <input type="email" id="email" name="email" required placeholder="vaš@email.com"><br><br>
+
+        <button type="submit">Pošalji</button>
+    </form>
+</section>
+
+    <footer>
+        <p>Pratite nas na društvenim mrežama:</p>
+        <a href="https://facebook.com" target="_blank"> Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </footer>
+
+
+</body>
+</html>
