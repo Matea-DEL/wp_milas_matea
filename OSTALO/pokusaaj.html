@@ -1,238 +1,166 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recepti</title>
-    <!-- Dodavanje Google fonta -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #f8b400;
-            color: white;
-            text-align: center;
-            padding: 20px 10px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        nav {
-            background-color: #f8b400;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav li {
-            display: inline;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #e67e22;
-        }
-
-        main {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 20px;
-        }
-
-        section {
-            grid-column: span 4;
-            background-color: #fff8e1;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        section:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .recept img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 2px solid #f8b400;
-            transition: opacity 0.3s;
-        }
-
-        .recept img:hover {
-            opacity: 0.8;
-        }
-
-        footer {
-            background-color: #444;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer img {
-            width: 30px;
-            margin: 0 10px;
-            transition: transform 0.3s;
-        }
-
-        footer img:hover {
-            transform: scale(1.2);
-        }
-
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #f8b400;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            display: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        #back-to-top:hover {
-            background-color: #e67e22;
-        }
-
-        @media (max-width: 480px) {
-            main {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                grid-column: span 12;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Matea Milas">
+    <title>Grayscale - Matea Milas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/startbootstrap-grayscale@7.0.5/dist/css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <h1>Dobrodošli u svijet recepata</h1>
-        <p>Otkrijte ukusne recepte i inspiraciju za vaše kuhanje.</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#predjela">Predjela</a></li>
-            <li><a href="#glavna-jela">Glavna jela</a></li>
-            <li><a href="#deserti">Deserti</a></li>
-        </ul>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Matea Milas</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">O meni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Zadaci</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <main>
-        <section id="predjela">
-            <h2>Predjela</h2>
-            <div class="recept">
-                <img src="https://www.b92.net/news/pics/2023/10/20/170613188465324f3d79a20968249926_w640.jpg" alt="Predjelo">
-                <h3>Bruschette</h3>
-                <p>Ukusne bruschette s rajčicama i bosiljkom.</p>
-                <h3>SASTOJCI</h3>
-                <ul>
-                    <li>2 češnja češnjaka</li>
-                    <li>6 rajčica</li>
-                    <li>2 grane svježeg bosiljka</li>
-                    <li>1 „Francuz“ ili sličan duguljasti kruh</li>
-                    <li>Sol</li>
-                    <li>Svježe mljeveni papar</li>
-                </ul>
-                <h3>PRIPREMA</h3>
-                <p>Blanširajte rajčice, a zatim ih narežite na kockice...</p>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Dobrodošli</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Otkrijte više o mojim interesima i projektima.</h2>
+                    <a class="btn btn-primary" href="#about">Saznaj Više</a>
+                </div>
             </div>
-        </section>
-
-        <section id="glavna-jela">
-            <h2>Glavna jela</h2>
-            <div class="recept">
-                <img src="https://recepti-api.index.hr/img/preview/large/recipe-mobile/05ff7f6c-e2da-40f1-87c6-e62b34ca1488/DSC09498.JPG" alt="Glavno jelo">
-                <h3>Piletina s povrćem</h3>
-                <p>Savršeno pečena piletina s povrćem.</p>
-                <h3>SASTOJCI</h3>
-                <ul>
-                    <li>Piletina</li>
-                    <li>Povrće</li>
-                    <li>Začini</li>
-                </ul>
-                <h3>PRIPREMA</h3>
-                <p>U dobro zagrijanu tavu stavite 1 žlicu maslinova ulja...</p>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">O meni</h2>
+                    <p class="text-white-50">
+                        Zovem se Matea Milas i ovo je moja osobna web stranica. Ovdje možete pronaći informacije o mojim hobijima, zadacima iz programiranja i kako me kontaktirati.
+                    </p>
+                </div>
             </div>
-        </section>
-
-        <section id="deserti">
-            <h2>Deserti</h2>
-            <div class="recept">
-                <img src="https://piovariations.cdn.podravka.net/06a0c316-610e-11eb-a769-0242ac12001d/v/f2b1f6a6-64bc-11eb-b6c2-0242ac130010/1600x1200-f2b21938-64bc-11eb-9498-0242ac130010.jpeg" alt="Desert">
-                <h3>Crnac bez jaja</h3>
-                <p>Klasični brzi desert bez jaja.</p>
-                <h3>SASTOJCI</h3>
-                <ul>
-                    <li>3 jogurta (3*180 g)</li>
-                    <li>300 g Pšeničnog glatkog brašna Podravka</li>
-                    <li>250 g šećera</li>
-                    <li>120 ml ulja</li>
-                    <li>25 g kakaa</li>
-                    <li>2 žličice Sode bikarbone Dolcela</li>
-                </ul>
-                <h3>PRIPREMA</h3>
-                <p>Jogurt, brašno, šećer, ulje, kakao i sodu bikarbonu miješajte...</p>
+            <img class="img-fluid" src="https://thefoxmagazine.com/wp-content/uploads/2020/05/israel-palacio-Y20JJ_ddy9M-unsplash-1-scaled.jpg" alt="" />
+        </div>
+    </section>
+    <!-- Hobbies-->
+    <section class="projects-section bg-light" id="hobbies">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-black mb-4">Moji Hobiji</h2>
+                    <p class="text-muted">U slobodno vrijeme uživam u raznim aktivnostima:</p>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Pratite nas na društvenim mrežama:</p>
-        <a href="https://facebook.com"><img src="facebook-ikona.png" alt="Facebook"></a>
-        <a href="https://instagram.com"><img src="instagram-ikona.png" alt="Instagram"></a>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="text-center">
+                        <i class="fas fa-music fa-3x mb-3 text-primary"></i>
+                        <h4 class="my-3">Glazba</h4>
+                        <p class="text-muted">Slušanje i istraživanje raznih glazbenih žanrova.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="text-center">
+                        <i class="fas fa-tv fa-3x mb-3 text-primary"></i>
+                        <h4 class="my-3">Gledanje serija</h4>
+                        <p class="text-muted">Pratim razne serije i filmove koji me inspiriraju.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="text-center">
+                        <i class="fas fa-smile fa-3x mb-3 text-primary"></i>
+                        <h4 class="my-3">Zabava</h4>
+                        <p class="text-muted">Druženje s prijateljima i uživanje u životu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-black mb-4">Zadaci iz programiranja</h2>
+                    <p class="text-muted">Ovdje su neki od mojih zadataka:</p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="text-center">
+                       <a href=""></a>
+                            <h4 class="my-3">Zadaća 1</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="text-center">
+                        <a href="" target="_blank" class="text-decoration-none text-dark">
+                            <h4 class="my-3">Zadaća 2</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="text-center">
+                        <a href="" target="_blank" class="text-decoration-none text-dark">
+                            <h4 class="my-3">Zadaća 3</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <h2 class="text-white mb-5">Kontaktirajte me</h2>
+                    <form class="form-signup">
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="name" type="text" placeholder="Ime" /></div>
+                        </div>
+                        <div class="row input-group-newsletter mt-3">
+                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Email Adresa" /></div>
+                        </div>
+                        <div class="row input-group-newsletter mt-3">
+                            <div class="col"><textarea class="form-control" id="message" rows="3" placeholder="Poruka"></textarea></div>
+                        </div>
+                        <button class="btn btn-primary btn-lg mt-4" type="submit">Pošalji</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">&copy; 2025 Matea Milas</div>
     </footer>
-
-    <button id="back-to-top">↑</button>
-
-    <script>
-        const backToTopButton = document.getElementById('back-to-top');
-
-        window.onscroll = () => {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        };
-
-        backToTopButton.onclick = () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-    </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://cdn.jsdelivr.net/npm/startbootstrap-grayscale@7.0.5/dist/js/scripts.js"></script>
 </body>
+
 </html>
+
